@@ -1,5 +1,5 @@
 class LaughBreak::CLI
-
+ 
     def call
         puts "Welcome to your Laugh Break!"
         puts "Choose a joke category:"
@@ -7,7 +7,7 @@ class LaughBreak::CLI
         menu
         
     end 
-
+ 
     def list_categories
         # <<-DOC is heredoc for multiline strings and .gsub code to get rid of indentation
         puts <<-DOC.gsub /^\s*/, ''  
@@ -17,7 +17,7 @@ class LaughBreak::CLI
     
         DOC
     end
-
+ 
     def menu
       input = nil 
       while input != 'exit'
@@ -38,9 +38,9 @@ class LaughBreak::CLI
         end
       end
     end
-
+ 
     def goodbye
         puts "Come back soon for another laugh break."
     end
-
+ 
 end
