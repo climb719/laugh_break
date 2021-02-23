@@ -33,8 +33,9 @@ Gem::Specification.new do |spec|
   # Uncomment to register a new dependency of your gem. ??When to use development? 
   spec.add_development_dependency "bundler"
   spec.add_dependency "rake", "~> 13.0"
-  spec.add_development_dependency "pry"
+  spec.add_dependency "pry"
   spec.add_dependency "httparty"
+
 
   # For more information and examples about making a new gem, checkout our
   # guide at: https://bundler.io/guides/creating_gem.html

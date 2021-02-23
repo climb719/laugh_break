@@ -2,5 +2,4 @@
 
 require_relative '../lib/laugh_break'
 
-LaughBreak::CLI.new.call
-
+CLI.new.call

@@ -1,20 +1,20 @@
-class LaughBreak::CLI
+class CLI
+    attr_accessor 
  
     def call
         puts "Welcome to your Laugh Break!"
-        puts "Choose a joke category:"
-        list_categories
+        puts "Choose a joke type:"
+        list_types
         menu
         
     end 
  
-    def list_categories
+    def list_types
         # <<-DOC is heredoc for multiline strings and .gsub code to get rid of indentation
         puts <<-DOC.gsub /^\s*/, ''  
         1. General
         2. Knock Knock
         3. Programming 
-    
         DOC
     end
  
@@ -26,9 +26,12 @@ class LaughBreak::CLI
         #case expression is an alternate of if-elsif-else expression
         case input
         when "1"
-            puts "General joke"
+            #puts "Pick which joke you want to hear:"
+            API.get_jokes("https://official-joke-api.appspot.com/jokes/general/ten")
+           
         when "2"
-            puts "Knock Knock joke"
+           
+
         when "3"
             puts "Programming joke"
         when "exit"
@@ -40,7 +43,11 @@ class LaughBreak::CLI
     end
  
     def goodbye
-        puts "Come back soon for another laugh break."
+        puts "Come back soon for another laugh break!"
     end
+
+    # def get_jokes_by_cat(url)
+    #     API.get_jokes(url)
+    # end
  
 end

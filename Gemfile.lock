@@ -3,7 +3,6 @@ PATH
   specs:
     laugh_break (0.1.0)
       httparty
-      pry
       rake (~> 13.0)
 
 GEM

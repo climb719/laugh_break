@@ -1,11 +1,8 @@
-class LaughBreak::Joke
-    attr_accessor :category, :setup, :punchline
+class Joke
+    attr_accessor :type, :setup, :punchline
     @@all = [] # use array to access objects in other classes 
  
-    def initialize(type, question, answer)
-        @category = type
-        @setup = question
-        @punchline = answer
+    def initialize 
         @@all << self
     end
  
