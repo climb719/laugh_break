@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require "laugh_break"
+require "laughter_break"
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure

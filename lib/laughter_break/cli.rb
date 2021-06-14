@@ -3,7 +3,7 @@ class CLI
  
     def call
         puts "Welcome to your Laughter Break!"
-        puts "Choose a joke type:"
+        puts "Please choose a joke type:"
         list_types
         menu
         
