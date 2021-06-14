@@ -2,7 +2,7 @@ class CLI
     attr_accessor 
  
     def call
-        puts "Welcome to your Laugh Break!"
+        puts "Welcome to your Laughter Break!"
         puts "Choose a joke type:"
         list_types
         menu
