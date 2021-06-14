@@ -1,8 +1,9 @@
 PATH
   remote: .
   specs:
-    laugh_break (0.1.0)
+    laughter_break (0.1.0)
       httparty
+      pry
       rake (~> 13.0)
 
 GEM
@@ -42,7 +43,7 @@ PLATFORMS
 DEPENDENCIES
   bundler
   httparty (~> 0.18.1)
-  laugh_break!
+  laughter_break!
   pry
   rake (~> 13.0)
   rspec (~> 3.0)
